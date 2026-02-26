@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cut | Barber Shop</title>
+    <title>The Classic Cut | Barber Shop</title>
      <link rel="icon" type="image/png" href="B1.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -19,17 +19,12 @@
             line-height: 1.6;
             color: #333;
             background-color: #f8f5f2;
+            background-image: url('background.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
-        body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f5f2;
-    background-image: url('background.jpeg'); /* Add this */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
 
         a {
             text-decoration: none;
@@ -158,7 +153,13 @@
             margin-right: auto;
         }
 
-        /* Services Section */
+        /* Services Section - Updated for transparency */
+        .services {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -167,10 +168,10 @@
         }
 
         .service-card {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s ease;
         }
@@ -198,8 +199,10 @@
 
         /* Gallery Section */
         .gallery {
-            background-color: #222;
+            background-color: rgba(34, 34, 34, 0.9);
             color: #fff;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
 
         .gallery h2 {
@@ -230,7 +233,13 @@
             transform: scale(1.05);
         }
 
-        /* About Section */
+        /* About Section - Updated for transparency */
+        .about {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -238,7 +247,13 @@
             align-items: center;
         }
 
-        /* Contact Section */
+        /* Contact Section - Updated for transparency */
+        .contact {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -271,6 +286,7 @@
             margin-bottom: 1rem;
             border: 1px solid #ddd;
             border-radius: 4px;
+            background: rgba(255, 255, 255, 0.9);
         }
 
         .contact-form textarea {
@@ -279,10 +295,12 @@
 
         /* Footer */
         footer {
-            background-color: #222;
+            background-color: rgba(34, 34, 34, 0.9);
             color: #fff;
             padding: 3rem 0;
             text-align: center;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
 
         .social-links {
@@ -343,7 +361,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">The <span></span> Cut</a>
+                <a href="#" class="logo">The <span>Classic</span> Cut</a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
@@ -379,7 +397,7 @@
                     </div>
                     <h3>Classic Haircut</h3>
                     <p>A precision cut with clippers and scissors, finished with styling.</p>
-                    <div class="price">$30</div>
+                    <div class="price">GH₵30</div>
                 </div>
 
                 <div class="service-card">
@@ -388,7 +406,7 @@
                     </div>
                     <h3>Beard Trim & Shape Up</h3>
                     <p>Expert shaping and trimming to keep your beard looking sharp.</p>
-                    <div class="price">$20</div>
+                    <div class="price">GH₵20</div>
                 </div>
 
                 <div class="service-card">
@@ -397,7 +415,37 @@
                     </div>
                     <h3>The Executive Package</h3>
                     <p>Haircut, hot towel shave, beard trim, and a relaxing shoulder massage.</p>
-                    <div class="price">$60</div>
+                    <div class="price">GH₵60</div>
+                </div>
+                
+                <!-- New Service: Hair Braiding -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-braille"></i>
+                    </div>
+                    <h3>Hair Braiding</h3>
+                    <p>Expert braiding services for all hair types and lengths.</p>
+                    <div class="price">Starting at GH₵45</div>
+                </div>
+                
+                <!-- New Service: Manicure -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Manicure</h3>
+                    <p>Professional nail care, shaping, and polishing for your hands.</p>
+                    <div class="price">GH₵25</div>
+                </div>
+                
+                <!-- New Service: Pedicure -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-socks"></i>
+                    </div>
+                    <h3>Pedicure</h3>
+                    <p>Revitalizing foot care treatment including exfoliation and nail care.</p>
+                    <div class="price">GH₵35</div>
                 </div>
             </div>
         </div>
@@ -411,35 +459,54 @@
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="B2.jpg" alt="">
+                    <img src="B2.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B3.jpg" alt="">
+                    <img src="B3.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B4.jpg" alt="">
+                    <img src="B4.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B5.jpg" alt="">
+                    <img src="B5.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B6.jpg" alt="">
+                    <img src="B6.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B7.jpg" alt="">
+                    <img src="B7.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B8.jpg" alt="">
+                    <img src="B8.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="B9.jpg" alt="">
+                    <img src="B9.jpg" alt="Barber work example">
                 </div>
                 <div class="gallery-item">
-                    <img src="background.jpeg" alt="">
+                    <img src="background.jpeg" alt="Barber shop interior">
                 </div>
                 <div class="gallery-item">
-                    <img src="B1.jpg" alt="">
+                    <img src="B1.jpg" alt="Barber tools">
                 </div>
+                <div class="gallery-item">
+                    <img src="br1.jpg" alt="Barber tools">
+                </div>
+                <div class="gallery-item">
+                    <img src="br2.jpg" alt="Barber tools">
+                </div>
+                <div class="gallery-item">
+                    <img src="br3.jpg" alt="Barber tools">
+                </div>
+                <div class="gallery-item">
+                    <img src="m1.jpg" alt="Barber tools">
+                </div>
+                <div class="gallery-item">
+                    <img src="m2.jpg" alt="Barber tools">
+                </div>
+                <div class="gallery-item">
+                    <img src="m3.jpg" alt="Barber tools">
+                </div>
+
                 
             </div>
         </div>
@@ -450,7 +517,7 @@
         <div class="container">
             <div class="about-content">
                 <div>
-                    <h2 style="color: white;">About The Cut</h2>
+                    <h2 style="color: white;">About The Classic Cut</h2>
                     <p style="color: white;">Established in 2010, The Classic Cut is more than just a barber shop; it's a community hub where gentlemen come to relax, converse, and leave looking their absolute best.</p>
                     <p style="color: white;">Our master barbers are trained in the latest techniques as well as the timeless traditions of the trade. We take pride in our attention to detail and our commitment to old-school customer service.</p>
                     <p style="color: white;">Step into our shop and step back in time to an era where quality and conversation were paramount.</p>
@@ -472,7 +539,7 @@
                 <div>
                     <h3 style="color: white;">Contact Info & Hours</h3>
                     <div class="contact-info">
-                        <p style="color: white;"><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State</p>
+                        <p style="color: white;"><i class="fas fa-map-marker-alt"></i> 123 Main Street, Wa,Upper West</p>
                         <p style="color: white;"><i class="fas fa-phone"></i> (555) 123-4567</p>
                         <p style="color: white;"><i class="fas fa-envelope"></i> hello@classiccut.com</p>
                     </div>
@@ -507,7 +574,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <p>&copy; 2023 The Classic Cut Barber Shop. All Rights Reserved.</p>
+            <p>&copy; 2026 The Classic Cut Barber Shop. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -541,4 +608,3 @@
     </script>
 </body>
 </html>
-

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Classic Cut | Barber Shop</title>
+    <title>Purple Palace Salon</title>
     <link rel="icon" type="image/png" href="B1.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
             --pink-light: #ff8fab;
             --dark: #1a1a1a;
             --white: #fff;
+            --purple: #800080;
         }
 
         body {
@@ -45,15 +46,15 @@
         .btn {
             display: inline-block;
             padding: 12px 30px;
-            background-color: var(--gold);
-            color: #fff;
+            background-color: var(--purple);
+            color: dark;
             border: none;
             border-radius: 4px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        .btn:hover { background-color: var(--gold-dark); transform: translateY(-2px); }
+        .btn:hover { background-color: var(--purple); transform: translateY(-2px); }
 
         section { padding: 5rem 0; }
 
@@ -75,21 +76,21 @@
         }
 
         .logo { font-size: 1.8rem; font-weight: 800; color: #222; font-family: 'Playfair Display', serif; }
-        .logo span { color: var(--gold); }
+        .logo span { color: var(--purple); }
 
         .nav-links { display: flex; list-style: none; }
         .nav-links li { margin-left: 2rem; }
 
         /* ── PINK NAV LINKS ── */
         .nav-links a {
-            color: var(--pink);
+            color: var(--purple);
             font-weight: 700;
             transition: color 0.3s ease;
             letter-spacing: 0.03em;
         }
-        .nav-links a:hover { color: var(--pink-light); }
+        .nav-links a:hover { color: var(--purple); }
 
-        .hamburger { display: none; cursor: pointer; font-size: 1.5rem; color: var(--pink); }
+        .hamburger { display: none; cursor: pointer; font-size: 1.5rem; color: var(--purple); }
 
         /* ── Hero ── */
         .hero {
@@ -107,13 +108,13 @@
         .hero-content h1 {
             font-size: 3.8rem;
             margin-bottom: 0.5rem;
-            color: #fff;
+            color:purple;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.04em;
             text-shadow: 0 2px 16px rgba(0,0,0,0.4);
         }
 
-        .hero-content h1 span { color: var(--gold); }
+        .hero-content h1 span { color: var(--purple); }
 
         .hero-tagline {
             font-size: 1rem;
@@ -136,6 +137,7 @@
         /* ── Services ── */
         .services {
             background-color: rgba(0,0,0,0.6);
+            -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
         }
 
@@ -153,18 +155,19 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.13);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 3px solid var(--gold);
+            border-top: 3px solid var(--purple);
         }
 
         .service-card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
-        .service-icon { font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; }
+        .service-icon { font-size: 2.5rem; color: var(--purple); margin-bottom: 1rem; }
         .service-card h3 { font-size: 1.4rem; }
-        .price { color: var(--gold); font-weight: bold; font-size: 1.2rem; margin: 0.5rem 0; }
+        .price { color: var(--purple); font-weight: bold; font-size: 1.2rem; margin: 0.5rem 0; }
 
         /* ── Gallery ── */
         .gallery {
             background-color: rgba(34,34,34,0.9);
             color: #fff;
+            -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
         }
 
@@ -182,7 +185,7 @@
         .gallery-item img:hover { transform: scale(1.05); }
 
         /* ── About ── */
-        .about { background-color: rgba(0,0,0,0.6); backdrop-filter: blur(5px); }
+        .about { background-color: rgba(0,0,0,0.6); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
 
         .about-content {
             display: grid;
@@ -192,7 +195,7 @@
         }
 
         /* ── Contact ── */
-        .contact { background-color: rgba(0,0,0,0.6); backdrop-filter: blur(5px); }
+        .contact { background-color: rgba(0,0,0,0.6); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
 
         .contact-wrapper {
             display: grid;
@@ -201,7 +204,7 @@
         }
 
         .contact-info { margin-bottom: 2rem; }
-        .contact-info i { color: var(--gold); margin-right: 10px; }
+        .contact-info i { color: var(--purple); margin-right: 10px; }
         .hours-list { list-style: none; }
         .hours-list li { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
 
@@ -223,7 +226,7 @@
         .success-message {
             display: none;
             background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-            border: 2px solid var(--gold);
+            border: 2px solid var(--purple);
             border-radius: 10px;
             padding: 2rem;
             text-align: center;
@@ -233,7 +236,7 @@
 
         .success-message.show { display: block; }
         .success-message i { font-size: 3rem; color: var(--gold); margin-bottom: 1rem; }
-        .success-message h3 { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.6rem; }
+        .success-message h3 { color: var(--purple); font-family: 'Playfair Display', serif; font-size: 1.6rem; }
         .success-message p { color: rgba(255,255,255,0.8); margin-top: 0.5rem; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -247,6 +250,7 @@
             z-index: 2000;
             align-items: center;
             justify-content: center;
+            -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
         }
 
@@ -339,7 +343,7 @@
             right: 2rem;
             width: 58px;
             height: 58px;
-            background: #25D366;
+            background: purple;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -394,7 +398,7 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-            border: 3px solid var(--gold);
+            border: 3px solid var(--purple);
         }
 
         .map-actions {
@@ -406,21 +410,21 @@
         }
 
         .btn-directions {
-            background-color: var(--gold);
+            background-color: var(--purple);
             color: #fff;
         }
 
-        .btn-directions:hover { background-color: var(--gold-dark); }
+        .btn-directions:hover { background-color: var(--purple); }
 
         .btn-view-map {
             background-color: transparent;
-            color: var(--dark);
-            border: 2px solid var(--gold);
+            color: var(--purple);
+            border: 2px solid var(--purple);
         }
 
         .btn-view-map:hover {
             background-color: var(--gold);
-            color: #fff;
+            color:purple;
         }
 
         .btn-directions i,
@@ -432,11 +436,12 @@
             color: #fff;
             padding: 3rem 0;
             text-align: center;
+            -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
         }
 
         .social-links { margin-bottom: 1.5rem; }
-        .social-links a { color: #fff; margin: 0 10px; font-size: 1.5rem; transition: color 0.3s ease; }
+        .social-links a { color:purple; margin: 0 10px; font-size: 1.5rem; transition: color 0.3s ease; }
         .social-links a:hover { color: var(--gold); }
 
         /* ── Responsive ── */
@@ -541,7 +546,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">The <span>Classic</span> Cut</a>
+                <a href="#" class="logo">Purple <span>Palace</span> Salon</a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
@@ -560,7 +565,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <p class="hero-tagline">Est. 2010 · Premium Grooming</p>
-            <h1>The <span>Classic</span> Cut</h1>
+            <h1>Purple <span>Palace</span> Salon</h1>
             <p>Experience the art of traditional barbering in a modern atmosphere. Where style meets sophistication.</p>
             <a href="#" class="btn" id="openBookingBtn">Book an Appointment</a>
         </div>
@@ -644,9 +649,9 @@
         <div class="container">
             <div class="about-content">
                 <div>
-                    <h2 style="color:white; font-family:'Playfair Display',serif;">About The Classic Cut</h2>
-                    <p style="color:white;">Established in 2010, The Classic Cut is more than just a barber shop; it's a community hub where gentlemen come to relax, converse, and leave looking their absolute best.</p>
-                    <p style="color:white; margin-top:1rem;">Our master barbers are trained in the latest techniques as well as the timeless traditions of the trade. We take pride in our attention to detail and our commitment to old-school customer service.</p>
+                    <h2 style="color:white; font-family:'Playfair Display',serif;">About Purple Palace Salon</h2>
+                    <p style="color:white;">Established in 2010, Purple Palace is more than just a salon it's a community hub where individuals come to relax, converse, and leave looking their absolute best.</p>
+                    <p style="color:white; margin-top:1rem;">Our staff is trained in the latest techniques as well as the timeless traditions of the trade. We take pride in our attention to detail and our commitment to old-school customer service.</p>
                     <p style="color:white; margin-top:1rem;">Step into our shop and step back in time to an era where quality and conversation were paramount.</p>
                 </div>
                 <div><img src="B1.jpg" alt="Barber shop interior" style="border-radius:10px;"></div>
@@ -666,13 +671,13 @@
                     <div class="contact-info" style="margin-top:1rem;">
                         <p style="color:white; margin-bottom:0.7rem;"><i class="fas fa-map-marker-alt"></i> 123 Main Street, Wa, Upper West</p>
                         <p style="color:white; margin-bottom:0.7rem;"><i class="fas fa-phone"></i> (555) 123-4567</p>
-                        <p style="color:white;"><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ee6ebe2e2e1ceede2effdfde7ededfbfaa0ede1e3">[email&#160;protected]</a></p>
+                    
                     </div>
                     <h4 style="color:white; margin-top:1.5rem; margin-bottom:0.8rem;">Business Hours</h4>
                     <ul class="hours-list">
-                        <li style="color:white;"><span>Monday – Friday</span><span>9:00 AM – 7:00 PM</span></li>
-                        <li style="color:white;"><span>Saturday</span><span>8:00 AM – 6:00 PM</span></li>
-                        <li style="color:white;"><span>Sunday</span><span>Closed</span></li>
+                        <li style="color:white;"><span>Monday – Friday</span><span>8:00 AM – 9:00 PM</span></li>
+                        <li style="color:white;"><span>Saturday</span><span>8:00 AM – 9:00 PM</span></li>
+                        <li style="color:white;"><span>Sunday</span><span>8:30AM–9:00Pm </span></li>
                     </ul>
                 </div>
 
@@ -683,7 +688,6 @@
                     <div class="success-message" id="successMsg">
                         <i class="fas fa-check-circle"></i>
                         <h3>Message Sent!</h3>
-                        <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
                     </div>
 
                     <!-- Contact Form -->
@@ -705,22 +709,22 @@
             <h2 class="text-center" style="font-family:'Playfair Display',serif; margin-bottom:0.5rem;">Find Us</h2>
             <p class="text-center" style="color:#666; margin-bottom:2rem;">123 Main Street, Wa, Upper West Region, Ghana</p>
             <div class="map-wrapper">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31575.56!2d-2.5!3d10.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd97e4b5e3a2b21%3A0x96f04e3fa7fad24b!2sWa%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh"
-                    width="100%"
-                    height="420"
-                    style="border:0; display:block;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="The Classic Cut Location">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374.2717689145544!2d-2.515915564588659!3d10.051049965774173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd2eb1cfce08a39%3A0xde448835bcab8f17!2sPURPLE%20PALACE%20BEAUTY%20%26%20BARBERING%20OFFICE.!5e1!3m2!1sen!2sgh!4v1772148159069!5m2!1sen!2sgh" 
+                width="100%" 
+                height="420" 
+                style="border:0; display:block" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+
                 </iframe>
             </div>
             <div class="map-actions">
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Wa,+Upper+West,+Ghana" target="_blank" class="btn btn-directions">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Wa,+Upper+West,+Ghana" target="_blank" rel="noopener noreferrer" class="btn btn-directions">
                     <i class="fas fa-directions"></i> Get Directions
                 </a>
-                <a href="https://maps.google.com/?q=Wa,+Upper+West,+Ghana" target="_blank" class="btn btn-view-map">
+                <a href="https://maps.google.com/?q=Wa,+Upper+West,+Ghana" target="_blank" rel="noopener noreferrer" class="btn btn-view-map">
                     <i class="fas fa-map-marked-alt"></i> View on Google Maps
                 </a>
             </div>
@@ -735,7 +739,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <p>&copy; 2026 The Classic Cut Barber Shop. All Rights Reserved.</p>
+            <p>&copy; 2026 Purple Palace Salon. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -747,7 +751,7 @@
             <!-- Booking Form -->
             <div id="bookingForm">
                 <h2>Book Your Visit</h2>
-                <p class="modal-subtitle">The Classic Cut · Wa, Upper West</p>
+                <p class="modal-subtitle">Purple Palace · Wa, Upper West</p>
 
                 <form class="modal-form" id="appointmentForm">
                     <input type="text" placeholder="Full Name" required id="bkName">
@@ -757,7 +761,7 @@
                         <option value="Classic Haircut – GH₵30">Classic Haircut – GH₵30</option>
                         <option value="Beard Trim & Shape Up – GH₵20">Beard Trim & Shape Up – GH₵20</option>
                         <option value="Executive Package – GH₵60">Executive Package – GH₵60</option>
-                        <option value="Hair Braiding – from GH₵45">Hair Braiding – from GH₵45</option>
+                        <option value="Hair Braiding – from GH₵45">Hair Braiding –  GH₵45</option>
                         <option value="Manicure – GH₵25">Manicure – GH₵25</option>
                         <option value="Pedicure – GH₵35">Pedicure – GH₵35</option>
                     </select>
@@ -802,7 +806,7 @@
     </div>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/233556276229" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/233556276229" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
         <span class="whatsapp-tooltip">Chat with us</span>
         <i class="fab fa-whatsapp"></i>
     </a>
